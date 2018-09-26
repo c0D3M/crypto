@@ -26,3 +26,7 @@ thats how we can determine last byte of block B. Similary create another block t
 - Bleichenbacher
 - Spectre, Meltdown, 
 - Heartbleed
+CVE-2014-0160  
+http://heartbleed.com/  
+In TLS Handshake, we have payload and length, payload can be 1 byte and length can be 65K.  
+openssl implemntation never check length field with actual payload length and blindly return asked length data and thereby leaking information present in openssl memory which attacker shouldnot have known.  
