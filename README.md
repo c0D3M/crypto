@@ -19,7 +19,8 @@ thats how we can determine last byte of block B. Similary create another block t
 
 - BEAST  
 https://www.youtube.com/watch?v=-_8-2pDFvmg  
-http://commandlinefanatic.com/cgi-bin/showarticle.cgi?article=art027  
+http://commandlinefanatic.com/cgi-bin/showarticle.cgi?article=art027
+https://www.nccgroup.trust/globalassets/our-research/us/whitepapers/ssl_attacks_survey.pdf
 
 Aplicable to CBC cipher , suppose we want to know Pi.  
 In CBC, Pi is first masked with Ci-1 and then DES/AES is applied to get Ci. This Ci serves as IV for next block i.e. i+1).  
