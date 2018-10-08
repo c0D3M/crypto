@@ -25,7 +25,7 @@ Aplicable to CBC cipher , suppose we want to know Pi.
 In CBC, Pi is first masked with Ci-1 and then DES/AES is applied to get Ci. This Ci serves as IV for next block i.e. i+1).  
 In CBC, we know Ci-1, Ci , suppose we now load a Chosen Plain Text (CPA) for encryption which is  
 Ci ⊕ Ci-1 ⊕ Mi  
-Ci will cancel out and what we have Ci-1 ⊕ Mi , which is nothing but second block encryption.  
+Ci will cancel out and what we have Ci-1 ⊕ Mi , which is nothing but second block encryption i.e. Ci, if they are equal we know M is correct guess   
 In this way we can craft Mi , byte by byte and retrive the plain text.  
 
 
