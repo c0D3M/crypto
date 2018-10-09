@@ -1,5 +1,5 @@
 # crypto
-- POODLE (Padding Oracle On Downgraded Legacy Encryption)  
+- **POODLE**_(Padding Oracle On Downgraded Legacy Encryption)_  
 In SSL 3.0 protocol, to encrypts plaintext message, it first creates a MAC and appends the MAC to the message(MAC-then-Encrypt).  
 Padding is then added at the end to make the message an integral number of blocks in length.  
 Note that padding length is not covered by MAC.  
@@ -21,7 +21,7 @@ CVE-ID: CVE­2014­3566
 Mitigation: Disabled SSL3.0 fallback & TLS_FALLBACK_SCSV  
 ClientHello cannot be changed as it is cryptographically protected in Finished message.  
 Client starts a TLS 1.2 session but an active attacker downgrades the connection to SSLv3.0. SSLv3.0 uses CBC or Stream Cipher RC4 mode.  
-- BEAST  
+- **BEAST**_(Browser Exploit Against SSL/TLS)_  
 https://www.youtube.com/watch?v=-_8-2pDFvmg  
 http://commandlinefanatic.com/cgi-bin/showarticle.cgi?article=art027
 https://www.nccgroup.trust/globalassets/our-research/us/whitepapers/ssl_attacks_survey.pdf
