@@ -1,4 +1,4 @@
-# crypto
+# crypto vulnerabilities
 - **POODLE**_(Padding Oracle On Downgraded Legacy Encryption)_  
 In SSL 3.0 protocol, to encrypts plaintext message, it first creates a MAC and appends the MAC to the message(MAC-then-Encrypt).  
 Padding is then added at the end to make the message an integral number of blocks in length.  
